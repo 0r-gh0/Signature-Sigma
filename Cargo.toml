@@ -1,0 +1,18 @@
+[package]
+name = "sigma"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-bls12-381 = "0.4"
+ark-ec        = "0.4"
+ark-ff        = "0.4"
+ark-std       = { version = "0.4", features = ["std"] }
+ark-serialize = "0.4"
+thiserror     = "1"
+sha2          = "0.10"
+zeroize       = { version = "1", features = ["derive"] }
+rand          = { version = "0.8", features = ["getrandom"] }
+
+[dev-dependencies]
+ark-std = { version = "0.4", features = ["std"] }
