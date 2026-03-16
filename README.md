@@ -1,5 +1,4 @@
 # Sigma Protocol over BBS+ Signatures — Design Spec
-**Date:** 2026-03-14  **Rev:** 9
 
 ---
 
@@ -524,9 +523,3 @@ zeroize       = { version = "1", features = ["derive"] }   # zeroise ProverSecre
 - Negative: `A = G1::zero()` as signature input to `prove()` → `ProvingError`
 
 ---
-
-## 14. Non-Goals
-
-- No serialisation/deserialisation of `Proof`
-- No multi-message BBS+ (single message `m` only)
-- No hiding of `A_prime`/`A_bar`/`D` from the verifier
